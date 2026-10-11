@@ -57,10 +57,13 @@ h2{font-family:var(--serif);font-weight:500;font-size:clamp(2.1rem,5.5vw,3.6rem)
     var(--foto-capa) center/cover no-repeat,
     radial-gradient(circle at 30% 20%,#7d2a40,#3a0f1c);
 }
-.hero-conteudo{max-width:960px;animation:entrada 1.4s ease both}
+.hero-conteudo{max-width:760px;animation:entrada 1.4s ease both}
 @keyframes entrada{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-.logo{margin:0 auto 22px;width:clamp(260px,62vw,560px);font-weight:500}
-/* A logo vira branca para aparecer sobre a foto. Se a sua já for clara, apague a linha do filter. */
+.logo {
+    margin: 0 auto 22px;
+    width: 100%;
+    max-width: 600px;
+}/* A logo vira branca para aparecer sobre a foto. Se a sua já for clara, apague a linha do filter. */
 .logo img{width:100%;height:auto;}
 .logo-texto{display:block;font-family:var(--serif);font-size:clamp(2.8rem,10vw,5.2rem);line-height:1}
 .tem-logo .logo-texto{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
